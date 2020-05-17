@@ -2,8 +2,9 @@
   "name": "gitea-to-github-migrator",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "main.ts",
   "scripts": {
+    "start": "node -r ts-node/register main.ts"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/zachary-D/gitea-to-github-migrator/issues"
   },
-  "homepage": "https://github.com/zachary-D/gitea-to-github-migrator#readme"
+  "homepage": "https://github.com/zachary-D/gitea-to-github-migrator#readme",
+  "dependencies": {
+    "@octokit/rest": "^17.8.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  }
 }
